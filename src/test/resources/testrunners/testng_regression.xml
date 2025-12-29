@@ -1,0 +1,55 @@
+<suite name="Opencart Application Test Regression Suite" verbose="4"
+	thread-count="5" parallel="tests">
+	
+	<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+		<listener class-name="com.qa.opencart.listeners.TestAllureListener" />
+		<listener class-name="com.qa.opencart.listeners.AnnotationTransformer" />
+	</listeners>
+	
+	<test name="Account Page Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.qa.opencart.tests.AccountsPageTest" />
+			
+		</classes> 
+	</test> 
+	
+	<test name="Login Page Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+			
+		</classes> 
+	</test>
+	
+	<test name="Register Page Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			
+			<class name="com.qa.opencart.tests.RegisterPageTest" />
+			
+		</classes> 
+	</test>
+	
+	<test name="Search Product Test">
+		<parameter name="browser" value="edge"/>
+		<classes>
+			
+			<class name="com.qa.opencart.tests.SearchProductTest" />
+			
+		</classes> 
+	</test>
+	
+	<test name="Product Info Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			
+			<class name="com.qa.opencart.tests.ProductInfoTest" />
+			
+		</classes> 
+	</test> 
+	
+	
+</suite>
