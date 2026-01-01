@@ -26,6 +26,7 @@ public class DriverFactory {
 	
 	//a single driver used by every thread in parallel testing can cause issues like resource locking, class execution at same time
 	// to avoid this we give a copy of driver to each thread using ThreadLocal class
+	
 	public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<WebDriver>();
 	
 	//4types of logs: info,warn,fatal,error
