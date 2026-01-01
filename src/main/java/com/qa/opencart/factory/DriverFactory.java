@@ -101,7 +101,7 @@ public class DriverFactory {
 				
 				case "uat":
 					log.info("Env is given hence running the test case on env : "+envName);
-					fp=new FileInputStream("src/test/resources/config/uat.properties");
+					fp=new FileInputStream("src/test/resources/config_uat.properties");
 				break;
 				
 				default:
