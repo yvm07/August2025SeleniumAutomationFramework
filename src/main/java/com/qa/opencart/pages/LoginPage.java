@@ -49,7 +49,7 @@ public class LoginPage {
 	// Public methods
 
 	public String getLoginPageTitle() {
-		String title = eUtil.waitforexactTitle("Account Title", AppConstants.DEFAULT_SHORT_WAIT);
+		String title = eUtil.waitforexactTitle("Account Title11", AppConstants.DEFAULT_SHORT_WAIT);
 		// System.out.println("Login Page title is : "+title);
 		log.info("Login Page title is : " + title);
 		return title;
